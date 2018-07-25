@@ -6,16 +6,16 @@ public class studentInformation {
 		Scanner scan = new Scanner(System.in);
 		
 		//creating strings with options for users to enter
-		String[] studentName = {"Michelle", "Tiffany", "Camila", "Joseph"};
-		String[] homeTowns = {"Hong Kong", "Detroit", "Brazil", "Dearborn"};
-		String[] Food = {"sushi", "olives", "chocolate", "pasta"};
+		String[] studentName = {"Michelle", "Tiffany", "Camila", "Joseph", "Kevin", "Matthew", "Kelly", "Lauren", "Erin", "Mike"};
+		String[] homeTowns = {"Hong Kong", "Detroit", "Brazil", "Dearborn", "Detroit", "Virginia Beach", "Miami", "Texas", "New York", "Chicago" };
+		String[] Food = {"sushi", "olives", "chocolate", "pasta", "pizza", "chicken", "sushi", "burger", "pizza", "steak"};
 		int userNum = 0;
 		String userInput = null;
 		String moreInfo = "y";
 		System.out.println("Welcome to our Java class. ");
 		
 		// asking for user input to have them enter a number to get a certain student
-		userNum = Validator.getInt(scan, "Which student would you like to learn more about? (enter a number 1-4):", 1, 4);
+		userNum = Validator.getInt(scan, "Which student would you like to learn more about? (enter a number 1-10):", 1, 10);
 		
 	
 		// While loop to ask if the user wants to continue at the end
